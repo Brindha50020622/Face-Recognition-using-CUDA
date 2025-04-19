@@ -23,8 +23,9 @@ storing LBP histogram features. Later, accuracy is computed with the test images
 During prediction, the image that is input is processed similarly and compared against all 
 reference histograms to determine the best match. 
 An interactive Google Colab interface provides user-friendly access to the recognition 
-capabilities, handling image upload, format conversion, and result display. 
-TECHNICAL HIGHLIGHTS
+capabilities, handling image upload, format conversion, and result display.
+
+**TECHNICAL HIGHLIGHTS**
 
 ● Feature Extraction: Implements 8-bit Local Binary Pattern operators for texture 
 analysis. 
