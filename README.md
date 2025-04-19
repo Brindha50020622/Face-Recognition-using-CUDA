@@ -1,7 +1,8 @@
 # Face-Recognition-using-CUDA
 
-OVERVIEW 
-Dataset: AT&T Database of Faces 
+
+Dataset: AT&T Database of Faces
+
 The project implements a facial recognition system using Local Binary Patterns (LBP) for 
 feature extraction and CUDA-based parallel computing for performance optimization. The 
 system creates LBP histograms from facial images, compares them using chi-square distance, 
@@ -23,20 +24,29 @@ During prediction, the image that is input is processed similarly and compared a
 reference histograms to determine the best match. 
 An interactive Google Colab interface provides user-friendly access to the recognition 
 capabilities, handling image upload, format conversion, and result display. 
-TECHNICAL HIGHLIGHTS 
+TECHNICAL HIGHLIGHTS
+
 ● Feature Extraction: Implements 8-bit Local Binary Pattern operators for texture 
 analysis. 
+
 ● CUDA Parallel Processing: Utilizes grid-based thread parallelism to accelerate image 
 processing with a 16×16 thread block configuration. 
+
 ● Hybrid Computation Model: Incorporates seamless fallback to CPU processing when 
 GPU resources are unavailable or CUDA operations fail 
+
 ● Optimized Memory Management: Implements efficient memory handling for both host 
-and device operations, with appropriate flattening of 2D structures for GPU compatibility 
+and device operations, with appropriate flattening of 2D structures for GPU compatibility
+
 ● KNN Classification Model: Implements a KNN classifier to classify the input images. 
+
 ● Chi-Square Distance Metric: Employs histogram comparison optimized for texture 
-feature matching in facial recognition contexts 
+feature matching in facial recognition contexts
+
 ● Atomic Operations: Uses CUDA atomic operations to handle concurrent histogram 
 updates during parallel processing 
+
 ● Histogram Normalization: Applies proportional scaling to ensure consistent comparison 
 between images of different sizes 
+
 ● Interactive Interface: Provides a web-based user interface.
